@@ -10,7 +10,7 @@ const RightCard = (props) => {
                 <p className='text-shadow-2xs mb-2 text-lg font-semibold text-gray-200 leading-relaxed'>{props.intro}</p>
                 <div className='flex items-center justify-between'>
                     <button className='bg-blue-700 px-5 py-3 text-white rounded-full font-medium cursor-pointer active:scale-95 transition-transform duration-150'>{props.tag}</button>
-                    <button className='text-xl bg-blue-700 px-5 py-3 text-white rounded-full font-medium cursor-pointer active:scale-95 transition-transform duration-150'><i class="ri-arrow-right-line"></i></button>
+                    <button className='text-xl bg-blue-700 px-5 py-3 text-white rounded-full font-medium cursor-pointer active:scale-95 transition-transform duration-150'><i className="ri-arrow-right-line"></i></button>
                 </div>
             </div>
         </div>
