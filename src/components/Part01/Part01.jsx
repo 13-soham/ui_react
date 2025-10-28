@@ -6,9 +6,9 @@ import RightContent from './RightContent';
 
 const Part01 = (props) => {
   return (
-    <div className='h-screen w-full'>
+    <div className='h-screen w-full overflow-hidden'>
         <Nav/>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col lg:flex-row items-center justify-between'>
             <LeftContent/>
             <RightContent users={props.users}/>
         </div>

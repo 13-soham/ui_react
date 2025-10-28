@@ -31,21 +31,23 @@ const Note01 = () => {
     });
     return (
         <div className="p-4 max-w-md mx-auto">
-            <form onSubmit={submithandler} className="flex gap-2 mb-4">
-                <input
-                    value={user}
-                    type="text"
-                    placeholder="name"
-                    onChange={(e) => setuser(e.target.value)}
-                    className="flex-1 px-3 py-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-1 focus:ring-lime-500 text-white"
-                />
-                <input
-                    value={age}
-                    type="number"
-                    placeholder="age"
-                    onChange={(e) => setage(e.target.value)}
-                    className="w-20 px-3 py-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-1 focus:ring-lime-500 text-white"
-                />
+            <form onSubmit={submithandler} className="flex lg:flex-row flex-col gap-2 mb-4">
+                <div className='flex gap-3 lg:gap-2'>
+                    <input
+                        value={user}
+                        type="text"
+                        placeholder="name"
+                        onChange={(e) => setuser(e.target.value)}
+                        className="flex-1 px-3 py-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-1 focus:ring-lime-500 text-white"
+                    />
+                    <input
+                        value={age}
+                        type="number"
+                        placeholder="age"
+                        onChange={(e) => setage(e.target.value)}
+                        className="w-20 px-3 py-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-1 focus:ring-lime-500 text-white"
+                    />
+                </div>
                 <button className="px-4 py-2 bg-lime-600 text-white rounded-xl active:scale-95 transition-transform duration-150 hover:bg-lime-700 cursor-pointer">
                     Submit
                 </button>
