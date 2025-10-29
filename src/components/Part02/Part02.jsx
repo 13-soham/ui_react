@@ -4,7 +4,7 @@ import Note02 from './Note02';
 
 const Part02 = () => {
   return (
-    <div className='h-screen w-full bg-blue-950 px-10 py-5'>
+    <div className='h-screen w-full bg-blue-950 px-10 py-5 overflow-auto scrollbar-hide'>
       <Note01/>
       <Note02/>
     </div>
