@@ -7,7 +7,7 @@ const Note02 = () => {
 
     let submitHandler = (e) => {
         e.preventDefault();
-        console.log(Heading , Details);
+        // console.log(Heading , Details);
 
         setOutput([...Output, {Heading, Details}]);
 
