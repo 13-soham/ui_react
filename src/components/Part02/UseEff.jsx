@@ -19,9 +19,13 @@ const UseEff = () => {
     //     console.log("useEffect is running...");      // log after only A button clicking
     // },[A]);
 
+    // useEffect(function (){
+    //     console.log("useEffect is running...");      // log after only B button clicking
+    // },[B]);
+
     useEffect(function (){
-        console.log("useEffect is running...");      // log after only B button clicking
-    },[B]);
+        console.log("useEffect is running...");      // log after any of A, B button clicking
+    },[A,B]);
 
     return (
       // UseEffect-Hook → it is a React hook that synchronize a component with an external system.

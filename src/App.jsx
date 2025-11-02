@@ -1,6 +1,7 @@
 import React from 'react'
 import Part01 from './components/Part01/Part01';
 import Part02 from './components/Part02/Part02';
+import Part03 from './components/Part03/Part03';
 
 const App = () => {
   const users = [
@@ -37,6 +38,7 @@ const App = () => {
     <div>
       <Part01 users={users}/>
       <Part02 />
+      <Part03/>
     </div>
   )
 }
