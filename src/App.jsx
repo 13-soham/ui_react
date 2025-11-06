@@ -4,6 +4,9 @@ import Part02 from './components/Part02/Part02';
 import Part03 from './components/Part03/Part03';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from '../pages/NotFound';
+import Times from '../pages/Times';
+import Alarm from '../pages/Alarm';
+import Detail from '../pages/Detail';
 
 const App = () => {
   const users = [
@@ -40,8 +43,13 @@ const App = () => {
     <div>
       <Routes>
         <Route path='/' element={<Part01 users={users}/>}/>
-        <Route path='/Part02' element={<Part02 />}/>
+        <Route path='/Part02' element={<Part02 />}>
+          <Route path='Alarm' element={<Alarm/>}/>
+          <Route path='Times' element={<Times/>}/>
+        </Route>
+        <Route path='/Part02/:id' element={<Detail/>}/>
         <Route path='/Part03' element={<Part03 />}/>
+
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </div>
