@@ -11,7 +11,7 @@ const API01 = () => {
 
     return (
         <div>
-            <button onClick={() => getAPI()} className='px-4 py-3 bg-emerald-700 border-2 border-black rounded-lg active:scale-95 transition-transform duration-150 cursor-pointer'>GetData</button>
+            {/* <button onClick={() => getAPI()} className='px-4 py-3 bg-emerald-700 border-2 border-black rounded-lg active:scale-95 transition-transform duration-150 cursor-pointer'>GetData</button> */}
             <div>
                 {data.map((elem, idx)=>{
                     return <h3 key={idx}>hello {elem.author}</h3>

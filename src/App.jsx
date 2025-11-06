@@ -2,6 +2,8 @@ import React from 'react'
 import Part01 from './components/Part01/Part01';
 import Part02 from './components/Part02/Part02';
 import Part03 from './components/Part03/Part03';
+import { Route, Routes } from 'react-router-dom';
+import NotFound from '../pages/NotFound';
 
 const App = () => {
   const users = [
@@ -36,9 +38,12 @@ const App = () => {
 
   return (
     <div>
-      <Part01 users={users}/>
-      <Part02 />
-      <Part03/>
+      <Routes>
+        <Route path='/' element={<Part01 users={users}/>}/>
+        <Route path='/Part02' element={<Part02 />}/>
+        <Route path='/Part03' element={<Part03 />}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
     </div>
   )
 }
