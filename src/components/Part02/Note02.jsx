@@ -8,6 +8,10 @@ const Note02 = () => {
     let submitHandler = (e) => {
         e.preventDefault();
         // console.log(Heading , Details);
+        if(Heading.trim() === ""){
+            alert("E bhai kichu lekh");
+            return;
+        }
 
         setOutput([...Output, {Heading, Details}]);
 
